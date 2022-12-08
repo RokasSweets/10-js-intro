@@ -12,6 +12,17 @@
     let - kintama reiksme (sekantis tinkamas pasirinkimas jei netinka const)
     var - niekada nenaudoti (seniena)
 
+    sutrumpinimai:
+    x = x + 2 > x += 2
+    x = x - 2 > x -= 2
+    x = x * 2 > x *= 2
+    x = x / 2 > x /= 2
+    x = x % 2 > x %= 2        
+
+    jei padidinti reikia tik 1 vienetu tai:   (sumazinti butu taspats tik x--)
+    x = x + 1 -> x += 1 -> x++
+    pirma padidina x reiksme ir tik paskui paima x reiksme
+    x = x + 1 -> x += 1 -> ++x
 */
 
 const PI = 3.14;
@@ -100,3 +111,34 @@ console.log('pazymiu suma;', pazymiuSuma);
 
 pazymiuSuma = pazymiuSuma + p4;
 console.log('pazymiu suma;', pazymiuSuma);
+
+console.log('-------------')
+
+const islaida1 = 10;
+const islaida2 = 20;
+const islaida3 = 25;
+const islaida4 = 35;
+
+let saskaita = 100;
+saskaita -= islaida1;
+console.log('isleidau', islaida1, '; saskaitoje liko:', saskaita);
+
+saskaita -= islaida2;
+console.log('isleidau', islaida2, '; saskaitoje liko:', saskaita);
+
+saskaita -= islaida3;
+console.log('isleidau', islaida3, '; saskaitoje liko:', saskaita);
+
+saskaita -= islaida4;
+console.log('isleidau', islaida4, '; saskaitoje liko:', saskaita);
+
+console.log('-------------')
+
+let index = 0;
+index++;   // same as +1
+index += 1;
+index += 1;
+index += 1;
+index += 1;
+index += 1;
+console.log('index:', index)
