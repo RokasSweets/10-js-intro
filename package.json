@@ -8,6 +8,7 @@
     "numbers": "nodemon ./js/02-numbers.js",
     "strings": "nodemon ./js/03-strings.js",
     "nd": "nodemon ./js/04-nd.js",
+    "boolean": "nodemon ./js/04-boolean.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
