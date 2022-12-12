@@ -127,6 +127,8 @@ const person = {
     ],
 }
 
-
-console.log(person.children[2].name);
+console.log(person['children'][1]['name']);
+console.log(person.children[1]['name']);
+console.log(person['children'][1].name);
+console.log(person.children[1].name);
 console.log(person.children.length);
