@@ -63,8 +63,7 @@ const student2 = [6, 7, 8, 9, 10];
 const student3 = [1, 3, 5, 7, 9];
 
 function listAverage(marks) {
-    console.log(marks);
-    const count = marks.lenght;
+    const count = marks.length;
     let sum = 0;
     let index = 0;
 
@@ -77,9 +76,9 @@ function listAverage(marks) {
     return sum / count;
 }
 
-const average1 = listAverage(student1); // 6 
+const average1 = listAverage(student1); // 6
 const average2 = listAverage(student2); // 8
-const average3 = listAverage(student3); // 5 
+const average3 = listAverage(student3); // 5
 
 console.log(average1);
 console.log(average2);
