@@ -132,3 +132,9 @@ console.log(person.children[1]['name']);
 console.log(person['children'][1].name);
 console.log(person.children[1].name);
 console.log(person.children.length);
+
+console.log('--------------');
+
+const y =typeof'' + 5;
+console.log(y);
+
