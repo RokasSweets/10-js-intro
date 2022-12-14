@@ -15,6 +15,7 @@
     "function": "nodemon ./js/08-function.js",
     "if": "nodemon ./js/09-if.js",
     "ifnd": "nodemon ./js/09-ifnd.js",
+    "for": "nodemon ./js/10-for.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
