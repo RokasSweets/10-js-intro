@@ -7,15 +7,16 @@
     "labas": "nodemon ./js/01-labas.js",
     "numbers": "nodemon ./js/02-numbers.js",
     "strings": "nodemon ./js/03-strings.js",
-    "nd": "nodemon ./js/04-nd.js",
+    "nd": "nodemon ./tasks/04-nd.js",
     "boolean": "nodemon ./js/04-boolean.js",
     "array": "nodemon ./js/05-array.js",
     "typeof": "nodemon ./js/06-typeof.js",
     "object": "nodemon ./js/07-object.js",
     "function": "nodemon ./js/08-function.js",
     "if": "nodemon ./js/09-if.js",
-    "ifnd": "nodemon ./js/09-ifnd.js",
+    "ifnd": "nodemon ./tasks/09-ifnd.js",
     "for": "nodemon ./js/10-for.js",
+    "shop": "nodemon ./tasks/10-shop.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
