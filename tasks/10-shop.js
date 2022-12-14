@@ -1,6 +1,6 @@
 console.clear();
 
-const currency = 'EUR';
+const valiuta = 'EUR';
 const prekes = [
     {
         name: 'Bananas',
@@ -19,14 +19,27 @@ const prekes = [
     },
 ];
 
-function shop() {
-
+if (prekes.inStock <= 0) {
+    console.log(`${prekes.name} sandelyje nera.`);
 }
 
-shop(prekes, currency);
+function shop() {
+    console.log(`MUSU PARDUOTUVE`);
+    console.log('-----------');
+    let kaina = 0;
+    for (let i = 0; i < prekes.length; i++)  {
+        if (prekes[i].inStock === 0) {
+            console.log(`${prekes[i].name} kainuoja ${prekes[i].price.toFixed(2)} ${valiuta}. Prekes sandelyje nera.`);
+        } else {
+        console.log(`${prekes[i].name} kainuoja ${prekes[i].price.toFixed(2)} ${valiuta} ir turime ju ${prekes[i].inStock} vnt.`);
+        kaina += prekes[i].price * prekes[i].inStock;}
+    }
+    console.log('-----------');
+    console.log(`Viso asortimento kaina: ${kaina.toFixed(2)} ${valiuta}`);
+}
 
-console.log(`MUSU PARDUOTUVE`);
-console.log('-----------');
+shop(prekes, valiuta);
+
 
 
 
