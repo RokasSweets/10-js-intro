@@ -17,6 +17,8 @@
     "ifnd": "nodemon ./tasks/09-ifnd.js",
     "for": "nodemon ./js/10-for.js",
     "shop": "nodemon ./tasks/10-shop.js",
+    "range-sum": "nodemon ./tasks/range-sum.js",
+    "sum-of-positive": "nodemon ./codewars/sum-of-positive.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
