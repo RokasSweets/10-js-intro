@@ -19,6 +19,8 @@
     "shop": "nodemon ./tasks/10-shop.js",
     "range-sum": "nodemon ./tasks/range-sum.js",
     "sum-of-positive": "nodemon ./codewars/sum-of-positive.js",
+    "enough-space": "nodemon ./codewars/enough-space.js",
+    "need-one": "nodemon ./codewars/need-one.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
