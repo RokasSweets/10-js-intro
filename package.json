@@ -23,6 +23,7 @@
     "need-one": "nodemon ./codewars/need-one.js",
     "reverseString": "nodemon ./tasks/reverseString.js",
     "rangeDivide": "nodemon ./tasks/rangeDivide.js",
+    "digitCount": "nodemon ./tasks/digitCount.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

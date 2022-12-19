@@ -68,6 +68,7 @@ console.log(rangeDivide(-18, 18, 7), '->', 5);
 console.log(rangeDivide(-18, 18, 0), '->', 5);
 console.log(rangeDivide(-18, 18, -7), '->', 5);
 
+console.log(rangeDivide(18, -18, -7), '->', 5);
 console.log(rangeDivide(-2, 2, 0.5), '->', 9);
 console.log(rangeDivide(-2.5, 3.5, 2), '->', 3);
 console.log(rangeDivide(-1000000000, 1000000000, 2), '->', 1000000001);
