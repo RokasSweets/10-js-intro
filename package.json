@@ -22,6 +22,7 @@
     "enough-space": "nodemon ./codewars/enough-space.js",
     "need-one": "nodemon ./codewars/need-one.js",
     "reverseString": "nodemon ./tasks/reverseString.js",
+    "rangeDivide": "nodemon ./tasks/rangeDivide.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
