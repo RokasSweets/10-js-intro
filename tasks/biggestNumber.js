@@ -33,3 +33,7 @@ console.log(biggestNumber('pomidoras'));
 console.log(biggestNumber(true));
 console.log(biggestNumber([]));
 console.log(biggestNumber(null));
+console.log(biggestNumber([1, 2, 3, Infinity]));
+console.log(biggestNumber([1, 2, 3, NaN]));
+console.log(biggestNumber([1, 2, 3, true]));
+console.log(biggestNumber([1, 2, 3, 'true']));
