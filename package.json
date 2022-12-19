@@ -24,6 +24,7 @@
     "reverseString": "nodemon ./tasks/reverseString.js",
     "rangeDivide": "nodemon ./tasks/rangeDivide.js",
     "digitCount": "nodemon ./tasks/digitCount.js",
+    "biggestNumber": "nodemon ./tasks/biggestNumber.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
