@@ -21,6 +21,7 @@
     "sum-of-positive": "nodemon ./codewars/sum-of-positive.js",
     "enough-space": "nodemon ./codewars/enough-space.js",
     "need-one": "nodemon ./codewars/need-one.js",
+    "reverseString": "nodemon ./tasks/reverseString.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
