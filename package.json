@@ -27,6 +27,7 @@
     "biggestNumber": "nodemon ./tasks/biggestNumber.js",
     "holiday": "nodemon ./codewars/holiday.js",
     "ternary": "nodemon ./js/11-ternary.js",
+    "string-method": "nodemon ./js/12-string-method.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
