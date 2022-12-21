@@ -52,3 +52,45 @@ function sumavimasForeach(mark) {
 }
 marks.forEach(sumavimasForeach);
 console.log('Foreach3:', sumForEach3 / marks.length);
+
+//for-in (iteruoja per objekta) jokiu masyvu!!!
+
+const user = {
+    name: 'Petras',
+    age: 99,
+    isMarried: true,
+    favouriteNumber: 13,
+    children: 5,
+    grandChildren: 25,
+    key: 'geltonas'
+}
+
+let sumForObj = 0;
+const userKeys = Object.keys(user)
+console.log(userKeys);
+
+
+for (let i = 0; i < userKeys.length; i++) {
+    const key = userKeys[i]
+    const value = user[key];
+    if (typeof value === 'number' 
+    && isFinite(value) 
+    && value > 0) {
+        sumForObj += value;
+    }
+}
+
+console.log('For-in:', sumForObj, '->', 142);
+
+let sumForIn = 0
+
+for (const key in user) {
+    const value = user[key];
+    if (typeof value === 'number' 
+    && isFinite(value) 
+    && value > 0) {
+        sumForIn += value;
+    }
+}
+
+console.log('For-in2:', sumForIn, '->', 142);
