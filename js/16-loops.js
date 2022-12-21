@@ -4,7 +4,7 @@ console.clear();
 LOOP - CIKLAS
 TEVAS -> for
 vaikai (isvestiniai) -> while, for-of, for-in, foreach
-next-level -> map, sort, filter, reduce, ...
+next-level (HOF - HIGHER ORDER FUNCTION) -> map, sort, filter, reduce, ...
 */
 
 const marks = [10, 2, 8, 4, 6];
@@ -94,3 +94,8 @@ for (const key in user) {
 }
 
 console.log('For-in2:', sumForIn, '->', 142);
+
+
+
+
+
