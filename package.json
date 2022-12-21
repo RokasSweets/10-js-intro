@@ -31,6 +31,7 @@
     "arrow": "nodemon ./js/13-arrow.js",
     "spread": "nodemon ./js/14-spread.js",
     "rest": "nodemon ./js/15-rest.js",
+    "loops": "nodemon ./js/16-loops.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
