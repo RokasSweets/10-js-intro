@@ -36,7 +36,7 @@ const car = {
 const { brand, color } = car
 console.log(brand, color);
 
-// SPREAD
+// SPREAD - israsymas/iskopijavimas
 
 const numbers = [1, 2, 3];
 const numbers2 = [...numbers, ...numbers];
@@ -71,3 +71,33 @@ console.log(person2.car.brand);
 
 const { childrenCount, happy } = person2;
 console.log(childrenCount, happy);
+
+console.clear();
+
+const a = ['a', 'aa'];
+const b = ['b', 'bb'];
+const c = ['c', 'cc'];
+
+const doubleABC = [...a, ...b, ...c];
+const doubleCBA = [...c, ...b, ...a];
+console.log(doubleABC);
+console.log(doubleCBA);
+
+const oa = {a: 'a', aa: 'aa'};
+const ob = {b: 'b', bb: 'bb'};
+const oc = {c: 'c', cc: 'cc'};
+
+const oABC = {...oa, ...ob, gg: 'gg', ...oc, cc: 'nebe CC'}; //CC ANT VIRSAUS UZRASYTA NAUJA REIKSME, NEGALIMA DVIGUBINT, PASKUTINIS WINS
+console.log(oABC);
+console.log(oABC.cc);
+console.log(oABC.gg);
+
+const user = {
+    name: 'username',
+    password: 'pasword12',
+};
+console.log(user);
+
+const user2 = {...user, name: 'Petras'};
+console.log(user2);
+console.log(user2.name);
