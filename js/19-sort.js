@@ -41,5 +41,17 @@ const students = [
  console.log(studentAgeZA);
 /// pagal vardus
  const studentNameAZ = [...students]
-    .sort((a, b) => a.name < b.name ? -1 : 1);
+    .sort((a, b) => a.name < b.name ? -1 : a.name === b.name ? 0 : 1);
     console.log(studentNameAZ);
+
+function compareStudents(a, b) {
+    if (a.name < b.name) {
+        return -1;
+    }
+    if (a.name === b.name) {
+        return 0;
+    }
+    return 1
+}
+const studentNameAZfunc = [...students].sort(compareStudents);
+console.log(studentNameAZfunc);
