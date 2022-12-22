@@ -33,6 +33,7 @@
     "rest": "nodemon ./js/15-rest.js",
     "loops": "nodemon ./js/16-loops.js",
     "map": "nodemon ./js/17-map.js",
+    "filter": "nodemon ./js/18-filter.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
