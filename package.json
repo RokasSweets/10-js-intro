@@ -35,6 +35,7 @@
     "map": "nodemon ./js/17-map.js",
     "filter": "nodemon ./js/18-filter.js",
     "sort": "nodemon ./js/19-sort.js",
+    "reduce": "nodemon ./js/20-reduce.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
