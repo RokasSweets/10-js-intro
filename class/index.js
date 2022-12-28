@@ -1,11 +1,27 @@
 console.clear();
 console.log('Class...');
 
-import Studentas from "./Student.js";
+import { Student } from "./Student.js";
 //const Student = require('./Student').default
 
-const petras = new Studentas('Petras', 2000);
-const maryte = new Studentas('Maryte', 1980);
+const petras = new Student('Petras', 2000);
+const maryte = new Student('Maryte', 1980);
+const jonas = new Student('Jonas', 1980)
 
-console.log(petras, petras.name, petras.birthYear, petras.isMarried);
-console.log(maryte, maryte.name, maryte.birthYear, maryte.isMarried);
+petras.addMark(10);
+petras.addMark(2);
+petras.addMark(22);
+petras.addMark(-3);
+petras.addMark(6);
+
+
+maryte.addMark(9);
+maryte.addMark(6);
+
+console.log(petras.name, petras.marks);
+console.log(maryte.name, maryte.marks);
+console.log(jonas.name, jonas.marks);
+
+console.log(petras.name, petras.marksAverage());
+console.log(maryte.name, maryte.marksAverage());
+console.log(jonas.name, jonas.marksAverage());
