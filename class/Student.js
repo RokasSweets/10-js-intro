@@ -7,9 +7,39 @@ class Student {
         this.marks = [];
     }
 
+
+    isValidMark(mark) {
+        if (typeof mark !== 'number'
+            || !isFinite(mark)
+            || mark < 1
+            || mark > 10
+            || mark %1 !== 0) {
+            return false
+        }
+        return true
+    }
+
+
+    updateName(name) {
+        this.name = name;
+    }
     //metodas itraukiantis nauja pazymi
     addMark(mark) {
-        this.marks.push(mark)
+        if (!this.isValidMark(mark)) {
+            return 'error'
+        }
+        this.marks.push(mark);
+        return 'OK';
+    }
+
+    addMarks(...marks) {
+        for (const mark of marks) {
+            if (!this.isValidMark(mark)) {
+            continue;
+        }
+        this.marks.push(mark);
+        }
+
     }
 
     marksAverage() {
@@ -17,9 +47,8 @@ class Student {
             return 'neiskaita'
         }
         const correctMarks = this.marks
-            .filter(m => m >= 1)
-            .filter(m => m <= 10)
-            .filter(m => m % 1 === 0);
+            .filter(this.isValidMark)
+
         console.log(correctMarks);
         return this.marks.reduce((t, m) => t + m, 0) / this.marks.length;
 
